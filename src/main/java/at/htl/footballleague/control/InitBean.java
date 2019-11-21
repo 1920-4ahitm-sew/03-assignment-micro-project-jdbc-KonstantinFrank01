@@ -1,4 +1,4 @@
-package at.htl.footballleague;
+package at.htl.footballleague.control;
 
 import at.htl.footballleague.entity.Player;
 
