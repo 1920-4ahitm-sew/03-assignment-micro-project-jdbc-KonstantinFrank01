@@ -1,11 +1,14 @@
 package at.htl.footballleague.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(
+                name = "Player.findByShirtNo",
+                query = "select p from Player p where p.shirtNumber = :SHIRTNO"
+        )
+})
 public class Player {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
