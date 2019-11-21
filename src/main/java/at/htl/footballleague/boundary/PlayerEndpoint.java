@@ -13,13 +13,13 @@ import javax.ws.rs.core.MediaType;
 
 @Stateless
 @Path("/")
-public class FootballLeagueEndpoint {
+public class PlayerEndpoint {
 
     @PersistenceContext
     EntityManager em;
 
     @GET
-    @Path("{id}")
+    @Path("player/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Player getPlayer(@PathParam("id") long id) {
         return em.find(Player.class, id);
