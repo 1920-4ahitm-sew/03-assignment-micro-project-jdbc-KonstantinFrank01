@@ -36,4 +36,14 @@ public class PlayerEndpoint {
                 .getResultList();
         return Response.ok(austrianPlayers).build();
     }
+
+    @GET
+    @Path("allofgermany")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllGermanPlayers() {
+        List<Player> germanPlayers = em.createNamedQuery("Player.findAllGermanPlayers", Player.class)
+                .setParameter("ID", Long.parseLong("2"))
+                .getResultList();
+        return Response.ok(germanPlayers).build();
+    }
 }
