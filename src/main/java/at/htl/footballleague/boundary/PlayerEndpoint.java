@@ -10,18 +10,30 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.List;
 
 @Stateless
-@Path("/")
+@Path("player")
 public class PlayerEndpoint {
 
     @PersistenceContext
     EntityManager em;
 
     @GET
-    @Path("player/{id}")
+    @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Player getPlayer(@PathParam("id") long id) {
         return em.find(Player.class, id);
+    }
+
+    @GET
+    @Path("allofaustria")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllAustrianPlayers() {
+        List<Player> austrianPlayers = em.createNamedQuery("Player.findAllAustrianPlayers", Player.class)
+                .setParameter("ID", Long.parseLong("1"))
+                .getResultList();
+        return Response.ok(austrianPlayers).build();
     }
 }
