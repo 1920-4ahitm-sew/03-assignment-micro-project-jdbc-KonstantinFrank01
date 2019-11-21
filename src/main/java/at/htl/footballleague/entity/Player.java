@@ -5,8 +5,12 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({
         @NamedQuery(
-                name = "Player.findByShirtNo",
-                query = "select p from Player p where p.shirtNumber = :SHIRTNO"
+                name = "Player.findById",
+                query = "select p from Player p where p.id = :ID"
+        ),
+        @NamedQuery(
+                name = "Player.findByFirstAndLastName",
+                query = "select p from Player p where p.firstName = :FIRSTNAME and p.lastName = :LASTNAME"
         )
 })
 public class Player {
