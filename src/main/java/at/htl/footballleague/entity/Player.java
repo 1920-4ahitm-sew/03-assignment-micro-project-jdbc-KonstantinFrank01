@@ -15,6 +15,10 @@ import javax.persistence.*;
         @NamedQuery(
                 name = "Player.findAllAustrianPlayers",
                 query = "select p from Player p where p.teamId = :ID"
+        ),
+        @NamedQuery(
+                name = "Player.findAllGermanPlayers",
+                query = "select p from Player p where p.teamId = :ID"
         )
 })
 public class Player {
