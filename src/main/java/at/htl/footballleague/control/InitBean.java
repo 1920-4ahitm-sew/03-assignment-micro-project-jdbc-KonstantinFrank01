@@ -63,8 +63,8 @@ public class InitBean {
         }
         Player player = null;
         try {
-            player = em.createNamedQuery("Player.findByShirtNo", Player.class)
-                    .setParameter("SHIRTNO", Integer.parseInt(line[2]))
+            player = em.createNamedQuery("Player.findByFirstAndLastName", Player.class)
+                    .setParameter("FIRSTNAME", line[0]).setParameter("LASTNAME", line[1])
                     .getSingleResult();
         } catch (NoResultException ex) {
             player = new Player(line[0], line[1], team.getId(), Integer.parseInt(line[2]));
