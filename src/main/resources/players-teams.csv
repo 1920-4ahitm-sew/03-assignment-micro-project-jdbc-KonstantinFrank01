@@ -1,8 +1,8 @@
 ﻿Firstname;Lastname;Shirtnumber;Team;Total Points
 Alexander;Schlager;1;Österreich;4
-Pavao;Pervan;12;Österreich;4
-Jörg;Siebenhandl;13;Österreich;4
-Andreas;Ulmer;2;Österreich;4
+Pavao ;Pervan;12;Österreich;4
+Jörg ;Siebenhandl;13;Österreich;4
+Andreas ;Ulmer;2;Österreich;4
 Aleksandar;Dragovic;3;Österreich;4
 Martin;Hinteregger;4;Österreich;4
 Stefan;Posch;5;Österreich;4
@@ -22,3 +22,27 @@ Marko;Arnautovic;7;Österreich;4
 Michael;Gregoritsch;11;Österreich;4
 Lukas;Hinterseer;19;Österreich;4
 Karim;Onisiwo;20;Österreich;4
+Marc-Andre;ter Stegen;22;Deutschland;7
+Bernd;Leno;12;Deutschland;7
+Manuel;Neuer;1;Deutschland;7
+Jonathan;Tah;5;Deutschland;7
+Matthias;Ginter;4;Deutschland;7
+Niklas;Stark;17;Deutschland;7
+Nico;Schulz;14;Deutschland;7
+Jonas;Hector;3;Deutschland;7
+Joshua;Kimmich;6;Deutschland;7
+Lukas;Klostermann;13;Deutschland;7
+Toni;Kroos;8;Deutschland;7
+Leon;Goretzka;18;Deutschland;7
+Ilkay;Gündogan;21;Deutschland;7
+Julian;Brandt;10;Deutschland;7
+Serge;Gnabry;20;Deutschland;7
+Timo;Werner;9;Deutschland;7
+Luca;Waldschmidt;19;Deutschland;7
+Emre;Can;23;Deutschland;7
+Nadiem;Amiri;11;Deutschland;7
+Robin;Koch;2;Deutschland;7
+Suat;Serdar;15;Deutschland;7
+Sebastian;Rudy;16;Deutschland;7
+Kai;Havertz;99;Deutschland;7
+Marco;Reus;66;Deutschland;7
